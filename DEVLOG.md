@@ -38,9 +38,32 @@ It is a bit difficult to pronounce but I like it [how Mariska says it](https://d
 
 ## Day 2 2021-01-22: Prototyping
 
+### The MVP
+
 Uhm, what I need for a minimal prototype? I would like to have a version that is minimal playable so I can start testing the concept with real people that can offer me feedback. 
 
 As this game is ultra simple I would like the art to be catching, funny and interesting, so the Player is not only interested in beating the game but also curious about about what the next graphic will be unveiled. So the first prototype should include this intention, minimal graphics but with some attractiveness.
 
+### The first Art
+
 This is what I came from:
+
+- https://raw.githubusercontent.com/fguillen/TheUnrepentantEntrant/main/Art/Devlog/2021-01-22%20PlaceholdersBrainStorm.jpg
+
+On the right there are plenty of placeholders ideas. The Placeholder is the structure that will serve are frame for the symbols. On the left we have some ideas of symbols for the Toaster placeholder. 
+
+In the placeholders we can see examples like:
+
+- Toaster: the symbols will appear jumping from the inside of the toaster
+- Meteor: symbols will be different kind of aliens
+- Magician hat: will will see rabbits and mysterious things
+- Human brain: what can popup from the inside of an human brain? :)
+
+From the first placeholder, the one I am going to use for the prototype (the Toaster) we have these kind of symbols ideas:
+
+- Normal toast
+- Toast with tomato, with cheese, with nutella .. uhmm
+- A croissant
+- A ballet dancer .. why not?
+- ...
 
