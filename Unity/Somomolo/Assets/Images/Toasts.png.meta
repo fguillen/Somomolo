@@ -1,12 +1,48 @@
 fileFormatVersion: 2
 guid: 476ba3862c0034fa3a26a2eb265fb964
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4715479013746268788
+    second: Toasts_0
+  - first:
+      213: -3936094067893178070
+    second: Toasts_1
+  - first:
+      213: 2251362037988152521
+    second: Toasts_2
+  - first:
+      213: 9138030990685845653
+    second: Toasts_3
+  - first:
+      213: 7489974904061283256
+    second: Toasts_4
+  - first:
+      213: 3278752137141732778
+    second: Toasts_5
+  - first:
+      213: 2895557362750320247
+    second: Toasts_6
+  - first:
+      213: -4145496525377958948
+    second: Toasts_7
+  - first:
+      213: -6314933187081667060
+    second: Toasts_8
+  - first:
+      213: -6528228180054715529
+    second: Toasts_9
+  - first:
+      213: -5206264644803379989
+    second: Toasts_10
+  - first:
+      213: -4072728504723039474
+    second: Toasts_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,13 +70,13 @@ TextureImporter:
     filterMode: -1
     aniso: 2
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,9 +85,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -61,7 +97,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -73,7 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -85,7 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,7 +133,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -119,13 +155,277 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Toasts_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2248.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ad728ed2fb07140800000000000000
+      internalID: 4715479013746268788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2248.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2174b0bc4f2069c0800000000000000
+      internalID: -3936094067893178070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2248.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4551768d17e3f10800000000000000
+      internalID: 2251362037988152521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1499.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598375a45cec0de70800000000000000
+      internalID: 9138030990685845653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1499.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbc92ddd7cb1f760800000000000000
+      internalID: 7489974904061283256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1499.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5c2e872b7708d20800000000000000
+      internalID: 3278752137141732778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 750.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77eef7184161f2820800000000000000
+      internalID: 2895557362750320247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_7
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 750.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb0b3bbfdc3876c0800000000000000
+      internalID: -4145496525377958948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_8
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 750.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0efbab69b9dc58a0800000000000000
+      internalID: -6314933187081667060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773d42bee031765a0800000000000000
+      internalID: -6528228180054715529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becb1d7b3e1afb7b0800000000000000
+      internalID: -5206264644803379989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toasts_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1.5
+        width: 720
+        height: 749.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b1061d003ca77c0800000000000000
+      internalID: -4072728504723039474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
