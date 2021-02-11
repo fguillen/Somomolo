@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 5716510468520032896}
   - component: {fileID: 5716510468520032897}
   - component: {fileID: 2119599575916995827}
+  - component: {fileID: 5934513376376451184}
   m_Layer: 0
   m_Name: Toaster
   m_TagString: Untagged
@@ -260,6 +261,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot: {fileID: 5716510467436594258}
   toast: {fileID: 0}
+--- !u!70 &5934513376376451184
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716510468520032903}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.02752757, y: 0.755038}
+  m_Size: {x: 1.6404226, y: 2.6988358}
+  m_Direction: 0
 --- !u!1 &5716510468658107377
 GameObject:
   m_ObjectHideFlags: 0

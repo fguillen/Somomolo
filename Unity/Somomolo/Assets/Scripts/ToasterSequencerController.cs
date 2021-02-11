@@ -11,6 +11,8 @@ public class ToasterSequencerController : MonoBehaviour
     [SerializeField] ToasterController[] toasters;
     List<ToastController[]> sequences;
 
+    string state = "starting";
+
     void Awake()
     {
         instance = this;
@@ -19,6 +21,7 @@ public class ToasterSequencerController : MonoBehaviour
 
     void Start()
     {
+        state = "started";
         SpawnNewSequence();
     }
 
@@ -61,6 +64,7 @@ public class ToasterSequencerController : MonoBehaviour
 
     void Win()
     {
+        state = "finished";
         CanvasGameController.instance.ShowYouWin();
     }
 
@@ -99,7 +103,6 @@ public class ToasterSequencerController : MonoBehaviour
             var toaster = shuffledToasters[i];
 
             var toast = Instantiate(toastPrefab, toaster.slot.transform).GetComponent<ToastController>();
-            toast.toaster = toaster;
             toaster.toast = toast;
         }
 
@@ -135,7 +138,7 @@ public class ToasterSequencerController : MonoBehaviour
 
     public void ClickedToast(ToastController toastController)
     {
-        if(IsTheNewToast(toastController))
+        if(IsTheCorrectToast(toastController))
         {
             CorrectClick();
         } else
@@ -144,7 +147,7 @@ public class ToasterSequencerController : MonoBehaviour
         }
     }
 
-    bool IsTheNewToast(ToastController toast)
+    bool IsTheCorrectToast(ToastController toast)
     {
         var lastSequence = sequences.Last();
         var previousSequence = Array.Empty<ToastController>();
@@ -157,5 +160,15 @@ public class ToasterSequencerController : MonoBehaviour
         var newToasts = lastSequence.Except(previousSequence).ToArray();
 
         return Array.Exists(newToasts, e => e.toastName == toast.toastName);
+    }
+
+    public bool AreAllToastersIdle()
+    {
+        return toasters.All(e => e.IsIdle());
+    }
+
+    public bool IsNotFinished()
+    {
+        return state != "finished";
     }
 }

@@ -19,39 +19,45 @@ public class ToasterController : MonoBehaviour
 
     public void PopOut()
     {
-        if(state == "idle")
-        {
-            animator.SetTrigger("popOut");
-            state = "popingOut";
-        }
+        animator.SetTrigger("popOut");
+        state = "popingOut";
     }
 
     public void PopIn()
     {
-        if(state == "idle")
-        {
-            animator.SetTrigger("popIn");
-            state = "popingIn";
-        }
+        animator.SetTrigger("popIn");
+        state = "popingIn";
     }
 
-    public void ToastClicked()
+    void ToastClicked()
     {
-        if(state == "idle")
-        {
-            animator.SetTrigger("clicked");
-            state = "clicked";
-        }
+        animator.SetTrigger("clicked");
+        state = "clicked";
     }
 
-    public void AnimationFinished()
+    void AnimationFinished()
     {
         if(state == "clicked")
         {
-            state = "idle"; // It has to be idle before we start the chain sequence
             ToasterSequencerController.instance.ClickedToast(toast); 
         }
 
         state = "idle";
+    }
+
+    void OnMouseDown()
+    {
+        if(
+            ToasterSequencerController.instance.IsNotFinished() &&
+            ToasterSequencerController.instance.AreAllToastersIdle()
+        )
+        {
+            ToastClicked();
+        }
+    }
+
+    public bool IsIdle()
+    {
+        return state == "idle";
     }
 }

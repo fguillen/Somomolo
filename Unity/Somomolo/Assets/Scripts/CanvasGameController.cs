@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CanvasGameController : MonoBehaviour
 {
@@ -26,5 +27,10 @@ public class CanvasGameController : MonoBehaviour
     public void ShowYouWin()
     {
         animator.SetTrigger("showYouWin");
+    }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene("Game");
     }
 }

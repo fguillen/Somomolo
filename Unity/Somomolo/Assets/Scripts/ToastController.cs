@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class ToastController : MonoBehaviour
 {
-    public string toastName;
-    public ToasterController toaster;
-    
-    void OnMouseDown()
-    {
-        toaster.ToastClicked();
-    }
+    public string toastName;    
+
 }
