@@ -6,12 +6,14 @@ using System.Linq;
 
 public class ToasterSequencerController : MonoBehaviour
 {
+    public static ToasterSequencerController instance;
     [SerializeField] ToastController[] toasts;
     [SerializeField] ToasterController[] toasters;
     List<ToastController[]> sequences;
 
     void Awake()
     {
+        instance = this;
         sequences = new List<ToastController[]>();    
     }
 
@@ -20,12 +22,10 @@ public class ToasterSequencerController : MonoBehaviour
         SpawnNewSequence();
     }
 
-    void Update()
+
+    void NextWave()
     {
-        if(Input.GetButtonDown("Jump"))
-        {
-            StartCoroutine("PopInToasts");
-        }
+        StartCoroutine("PopInToasts");
     }
 
     void RemoveOldToasts()
@@ -62,7 +62,9 @@ public class ToasterSequencerController : MonoBehaviour
             var toastPrefab = sequence[i].gameObject;
             var toaster = shuffledToasters[i];
 
-            Instantiate(toastPrefab, toaster.slot.transform);
+            var toast = Instantiate(toastPrefab, toaster.slot.transform).GetComponent<ToastController>();
+            toast.toaster = toaster;
+            toaster.toast = toast;
         }
 
         StartCoroutine("PopOutToasts");
@@ -75,7 +77,7 @@ public class ToasterSequencerController : MonoBehaviour
         foreach (var toasterController in shuffledToasters)
         {
             toasterController.PopOut();
-            yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 1f));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 0.5f));
         }
     }
 
@@ -86,11 +88,40 @@ public class ToasterSequencerController : MonoBehaviour
         foreach (var toasterController in shuffledToasters)
         {
             toasterController.PopIn();
-            yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 1f));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 0.5f));
         }
+
+        yield return new WaitForSeconds(0.2f);
 
         RemoveOldToasts();
         SpawnNewSequence();
     }
 
+    public void ClickedToast(ToastController toastController)
+    {
+        if(IsTheNewToast(toastController))
+        {
+            print("Good");
+        } else
+        {
+            print("Nop!");
+        }
+
+        NextWave();
+    }
+
+    bool IsTheNewToast(ToastController toast)
+    {
+        var lastSequence = sequences.Last();
+        var previousSequence = Array.Empty<ToastController>();
+
+        if(sequences.Count() > 1)
+        {
+            previousSequence = sequences[sequences.Count() - 2];
+        }
+
+        var newToasts = lastSequence.Except(previousSequence).ToArray();
+
+        return Array.Exists(newToasts, e => e.toastName == toast.toastName);
+    }
 }

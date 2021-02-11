@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class ToastController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string toastName;
+    public ToasterController toaster;
+    
+    void OnMouseDown()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        toaster.ToastClicked();
     }
 }

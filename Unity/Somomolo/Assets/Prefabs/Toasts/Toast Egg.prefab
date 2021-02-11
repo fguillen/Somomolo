@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3879562964279456610, guid: 8d5eab46c79b947a89764d20bce85069,
+        type: 3}
+      propertyPath: toastName
+      value: Egg
+      objectReference: {fileID: 0}
     - target: {fileID: 65313418652215745, guid: 8d5eab46c79b947a89764d20bce85069,
         type: 3}
       propertyPath: m_Sprite
