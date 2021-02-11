@@ -38,22 +38,29 @@ public class ToasterSequencerController : MonoBehaviour
         }
     }
 
-    public ToastController[] CreateNewSequence()
+    ToastController[] CreateNewSequence()
     {
-        ToastController[] sequence = new ArraySegment<ToastController>(toasts, sequences.Count, 3).Array;
+        ToastController[] sequence = new ArraySegment<ToastController>(toasts, sequences.Count, 3).ToArray();
         sequences.Add(sequence);
 
         return sequence;
     }
 
-    public void SpawnNewSequence()
+    ToasterController[] ShuffledToasters()
+    {
+        var random = new System.Random();
+        return toasters.OrderBy(i => random.Next()).ToArray();
+    }
+
+    void SpawnNewSequence()
     {
         var sequence = CreateNewSequence();
+        var shuffledToasters = ShuffledToasters();
 
-        for (int i = 0; i < toasters.Length; i++)
+        for (int i = 0; i < shuffledToasters.Length; i++)
         {
             var toastPrefab = sequence[i].gameObject;
-            var toaster = toasters[i];
+            var toaster = shuffledToasters[i];
 
             Instantiate(toastPrefab, toaster.slot.transform);
         }
@@ -63,8 +70,7 @@ public class ToasterSequencerController : MonoBehaviour
 
     IEnumerator PopOutToasts()
     {
-        var random = new System.Random();
-        var shuffledToasters = toasters.OrderBy(i => random.Next());
+        var shuffledToasters = ShuffledToasters();
         
         foreach (var toasterController in shuffledToasters)
         {
@@ -75,8 +81,7 @@ public class ToasterSequencerController : MonoBehaviour
 
     IEnumerator PopInToasts()
     {
-        var random = new System.Random();
-        var shuffledToasters = toasters.OrderBy(i => random.Next());
+        var shuffledToasters = ShuffledToasters();
         
         foreach (var toasterController in shuffledToasters)
         {
