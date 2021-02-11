@@ -22,10 +22,46 @@ public class ToasterSequencerController : MonoBehaviour
         SpawnNewSequence();
     }
 
+    bool AreThereMoreSequences()
+    {
+        return (toasts.Length > (sequences.Count() + toasters.Length - 1));
+    }
+
+    void WrongClick()
+    {
+        print("Wrong");
+        CanvasGameController.instance.ShowWrong();
+        StartFromScratch();
+    }
+
+    void CorrectClick()
+    {
+        print("Yes!");
+        CanvasGameController.instance.ShowCorrect();
+        NextWave();
+    }
+
+    void StartFromScratch()
+    {
+        sequences.Clear();
+        NextWave();
+    }
+
 
     void NextWave()
     {
-        StartCoroutine("PopInToasts");
+        if(AreThereMoreSequences())
+        {
+            StartCoroutine("PopInToasts");
+        } else 
+        {
+            Win();
+        }
+    }
+
+    void Win()
+    {
+        CanvasGameController.instance.ShowYouWin();
     }
 
     void RemoveOldToasts()
@@ -101,13 +137,11 @@ public class ToasterSequencerController : MonoBehaviour
     {
         if(IsTheNewToast(toastController))
         {
-            print("Good");
+            CorrectClick();
         } else
         {
-            print("Nop!");
+            WrongClick();
         }
-
-        NextWave();
     }
 
     bool IsTheNewToast(ToastController toast)
