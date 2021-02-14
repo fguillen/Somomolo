@@ -44,3 +44,6 @@ TagManager:
   - name: Toaster
     uniqueID: 803309047
     locked: 0
+  - name: Chickens
+    uniqueID: 1249180513
+    locked: 0
