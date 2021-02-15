@@ -7,6 +7,7 @@ public class ChickenController : MonoBehaviour
 {
     [SerializeField] Transform[] jumpingPoints;
     Transform jumpingPoint;
+    Animator animator;
 
     [SerializeField] LinearProportionConverter jumpingHighCalculator;
     
@@ -18,6 +19,8 @@ public class ChickenController : MonoBehaviour
     {
         state = "idle";
         facing = "right";
+
+        animator = GetComponent<Animator>();
     }
 
     void Start()
@@ -36,6 +39,20 @@ public class ChickenController : MonoBehaviour
         }    
 
         CheckFacing();
+
+        if(state == "jumping" && animator.GetBool("flyingUp"))
+        {
+            CheckFlyingDownState();
+        }
+    }
+
+    void CheckFlyingDownState()
+    {
+        if(jumpingPoint.position.y < transform.position.y)
+        {
+            animator.SetBool("flyingUp", false);
+            animator.SetBool("flyingDown", true);
+        }
     }
 
     void CheckFacing()
@@ -57,6 +74,9 @@ public class ChickenController : MonoBehaviour
     {        
         jumpingPoint = RandomJumpingPoint();
         state = "jumping";
+        animator.SetBool("flyingUp", true);
+        animator.SetBool("flyingDown", false);
+
         if(jumpingPoint.position.x > transform.position.x)
         {
             facing = "right";
@@ -94,6 +114,8 @@ public class ChickenController : MonoBehaviour
         print("Jump took: " + (Time.time - time) + " seconds, distance: " + distance + ", jumpingTime: " + jumpingTime);
 
         state = "idle";
+        animator.SetBool("flyingDown", false);
+        animator.SetBool("flyingUp", false);
     }
 
     Vector3 CalculateControlPoint(Vector3 point1, Vector3 point2)
