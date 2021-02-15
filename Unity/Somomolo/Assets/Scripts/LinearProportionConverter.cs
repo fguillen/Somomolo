@@ -37,11 +37,11 @@ using System;
         var d = dimension2Max;
         var e = dimension1Value;
 
-        Debug.Log("dimension1Min: " + dimension1Min);
-        Debug.Log("dimension1Max: " + dimension1Max);
-        Debug.Log("dimension2Min: " + dimension2Min);
-        Debug.Log("dimension2Max: " + dimension2Max);
-        Debug.Log("dimension1Value: " + dimension1Value);
+        // Debug.Log("dimension1Min: " + dimension1Min);
+        // Debug.Log("dimension1Max: " + dimension1Max);
+        // Debug.Log("dimension2Min: " + dimension2Min);
+        // Debug.Log("dimension2Max: " + dimension2Max);
+        // Debug.Log("dimension1Value: " + dimension1Value);
 
         var result = c + (((e - a) * (d - c)) / (b - a));
 

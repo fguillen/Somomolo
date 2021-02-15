@@ -6,16 +6,18 @@ using System.Linq;
 public class ChickenController : MonoBehaviour
 {
     [SerializeField] Transform[] jumpingPoints;
-    Transform actualJumpingPoint;
+    Transform jumpingPoint;
 
     [SerializeField] LinearProportionConverter jumpingHighCalculator;
     
 
     string state;
+    string facing;
 
     void Awake()
     {
         state = "idle";
+        facing = "right";
     }
 
     void Start()
@@ -32,6 +34,18 @@ public class ChickenController : MonoBehaviour
                 GoToRandomJumpingPoint();
             }
         }    
+
+        CheckFacing();
+    }
+
+    void CheckFacing()
+    {
+        if(
+            (facing == "left" && transform.localScale.x > 0) ||
+            (facing == "right" && transform.localScale.x < 0)
+        ) {
+            transform.localScale = new Vector3(-1 * transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
     }
 
     Transform RandomJumpingPoint()
@@ -41,8 +55,15 @@ public class ChickenController : MonoBehaviour
 
     void GoToRandomJumpingPoint()
     {        
-        actualJumpingPoint = RandomJumpingPoint();
+        jumpingPoint = RandomJumpingPoint();
         state = "jumping";
+        if(jumpingPoint.position.x > transform.position.x)
+        {
+            facing = "right";
+        } else
+        {
+            facing = "left";
+        }
 
         StartCoroutine("JumpCorroutine");
     }
@@ -52,12 +73,16 @@ public class ChickenController : MonoBehaviour
         float count = 0.0f;
 
         Vector3 actualPosition = transform.position;
-        Vector3 jumpingPointPosition = actualJumpingPoint.position;
+        Vector3 jumpingPointPosition = jumpingPoint.position;
         Vector3 controlPosition = CalculateControlPoint(actualPosition, jumpingPointPosition);
+
+        float distance = Vector3.Distance(actualPosition, jumpingPointPosition);
+        float jumpingTime = distance / 12.0f;
         
+        var time = Time.time;
 
         while (count < 1.0f) {
-            count += 1.0f * Time.deltaTime;
+            count += (1.0f / jumpingTime) * Time.deltaTime;
 
             Vector3 m1 = Vector3.Lerp( actualPosition, controlPosition, count );
             Vector3 m2 = Vector3.Lerp( controlPosition, jumpingPointPosition, count );
@@ -65,6 +90,8 @@ public class ChickenController : MonoBehaviour
 
             yield return null;
         }
+
+        print("Jump took: " + (Time.time - time) + " seconds, distance: " + distance + ", jumpingTime: " + jumpingTime);
 
         state = "idle";
     }
