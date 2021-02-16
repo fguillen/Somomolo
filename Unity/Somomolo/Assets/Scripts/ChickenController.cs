@@ -5,9 +5,10 @@ using System.Linq;
 
 public class ChickenController : MonoBehaviour
 {
-    [SerializeField] Transform[] jumpingPoints;
-    Transform jumpingPoint;
+    Vector3 jumpingPointPosition;
+    Vector3 originalPosition;
     Animator animator;
+    private IEnumerator jumpCoroutine;
 
     [SerializeField] LinearProportionConverter jumpingHighCalculator;
     
@@ -17,28 +18,28 @@ public class ChickenController : MonoBehaviour
 
     void Awake()
     {
-        state = "idle";
+        SetState("waiting");
         facing = "right";
+        originalPosition = transform.position;
 
         animator = GetComponent<Animator>();
-    }
-
-    void Start()
-    {
-        GoToRandomJumpingPoint();
     }
 
     void Update()
     {
         if(state == "idle")
         {
-            if(Random.Range(0, 100) == 0)
+            if(Random.Range(0, 200) == 0)
+            {
+                Cheep();
+            } else if(Random.Range(0, 50) == 0)
+            {
+                Bite();
+            } else if(Random.Range(0, 100) == 0)
             {
                 GoToRandomJumpingPoint();
             }
         }    
-
-        CheckFacing();
 
         if(state == "jumping" && animator.GetBool("flyingUp"))
         {
@@ -48,7 +49,7 @@ public class ChickenController : MonoBehaviour
 
     void CheckFlyingDownState()
     {
-        if(jumpingPoint.position.y < transform.position.y)
+        if(jumpingPointPosition.y < transform.position.y)
         {
             animator.SetBool("flyingUp", false);
             animator.SetBool("flyingDown", true);
@@ -57,6 +58,14 @@ public class ChickenController : MonoBehaviour
 
     void CheckFacing()
     {
+        if(jumpingPointPosition.x > transform.position.x)
+        {
+            facing = "right";
+        } else
+        {
+            facing = "left";
+        }
+
         if(
             (facing == "left" && transform.localScale.x > 0) ||
             (facing == "right" && transform.localScale.x < 0)
@@ -65,27 +74,27 @@ public class ChickenController : MonoBehaviour
         }
     }
 
-    Transform RandomJumpingPoint()
+    Vector3 RandomJumpingPointPosition()
     {
-        return jumpingPoints[Random.Range(0, jumpingPoints.Length)];
+        return BackgroundController.instance.jumpingPoints[Random.Range(0, BackgroundController.instance.jumpingPoints.Length)].position;
     }
 
     void GoToRandomJumpingPoint()
     {        
-        jumpingPoint = RandomJumpingPoint();
-        state = "jumping";
+        jumpingPointPosition = RandomJumpingPointPosition();
+        SetState("jumping");
+        GoToJumpingPoint();
+    }
+
+    void GoToJumpingPoint()
+    {
         animator.SetBool("flyingUp", true);
         animator.SetBool("flyingDown", false);
+        
+        CheckFacing();
 
-        if(jumpingPoint.position.x > transform.position.x)
-        {
-            facing = "right";
-        } else
-        {
-            facing = "left";
-        }
-
-        StartCoroutine("JumpCorroutine");
+        jumpCoroutine = JumpCorroutine();
+        StartCoroutine(jumpCoroutine);
     }
 
     IEnumerator JumpCorroutine()
@@ -93,7 +102,6 @@ public class ChickenController : MonoBehaviour
         float count = 0.0f;
 
         Vector3 actualPosition = transform.position;
-        Vector3 jumpingPointPosition = jumpingPoint.position;
         Vector3 controlPosition = CalculateControlPoint(actualPosition, jumpingPointPosition);
 
         float distance = Vector3.Distance(actualPosition, jumpingPointPosition);
@@ -111,11 +119,18 @@ public class ChickenController : MonoBehaviour
             yield return null;
         }
 
-        print("Jump took: " + (Time.time - time) + " seconds, distance: " + distance + ", jumpingTime: " + jumpingTime);
+        print("Jump took: " + (Time.time - time) + " seconds, distance: " + distance + ", jumpingTime: " + jumpingTime + ", jumpingPointPosition: " + jumpingPointPosition);
 
-        state = "idle";
         animator.SetBool("flyingDown", false);
         animator.SetBool("flyingUp", false);
+
+        if(state == "recycling")
+        {
+            Destroy(gameObject);
+        } else
+        {            
+            SetState("idle");
+        }
     }
 
     Vector3 CalculateControlPoint(Vector3 point1, Vector3 point2)
@@ -134,5 +149,66 @@ public class ChickenController : MonoBehaviour
         var controlPoint = new Vector3(controlPointX, controlPointY, 0);
 
         return controlPoint;
+    }
+
+    void Cheep()
+    {
+        SetState("cheeping");
+        animator.SetTrigger("cheep");
+    }
+
+    void Bite()
+    {
+        SetState("biting");
+        animator.SetTrigger("bite");
+    }
+
+    void AnimationFinished()
+    {
+        print("AnimationFinished");
+        if(state != "recycling")
+            SetState("idle");
+    }
+
+    public void GoToOriginalPosition()
+    {
+        jumpingPointPosition = originalPosition;
+        animator.enabled = false;
+        animator.enabled = true;
+
+        if(jumpCoroutine != null)
+        {
+            print("Stoping Coroutine");
+            StopCoroutine(jumpCoroutine);
+        }
+
+        SetState("recycling");
+        GoToJumpingPoint();
+    }
+
+    public void GoToScene()
+    {
+        GoToRandomJumpingPoint();
+    }
+
+    public void SetSpritesRenderOrder(int renderOrder)
+    {
+        SpriteRenderer[] spriteRenderers = GetComponentsInChildren<SpriteRenderer>(); 
+        foreach (var spriteRenderer in spriteRenderers)
+        {
+            spriteRenderer.sortingOrder = renderOrder;
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(jumpingPointPosition, 1);
+    }
+
+    void SetState(string newState)
+    {
+        print("SetState: " + newState);
+        state = newState;
     }
 }
