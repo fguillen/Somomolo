@@ -33,7 +33,7 @@ public class ToasterSequencerController : MonoBehaviour
     void WrongClick()
     {
         print("Wrong");
-        CanvasGameController.instance.ShowWrong();
+        // CanvasGameController.instance.ShowWrong();
         StartFromScratch();
         ChickensController.instance.SendChickensOutOfScene();
     }
@@ -41,7 +41,7 @@ public class ToasterSequencerController : MonoBehaviour
     void CorrectClick()
     {
         print("Yes!");
-        CanvasGameController.instance.ShowCorrect();
+        // CanvasGameController.instance.ShowCorrect();
         NextWave();
         ChickensController.instance.SendChickenToScene();
     }
