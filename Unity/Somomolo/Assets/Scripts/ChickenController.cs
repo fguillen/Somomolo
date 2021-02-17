@@ -8,9 +8,11 @@ public class ChickenController : MonoBehaviour
     Vector3 jumpingPointPosition;
     Vector3 originalPosition;
     Animator animator;
+    AudioSource audioSource;
     private IEnumerator jumpCoroutine;
 
     [SerializeField] LinearProportionConverter jumpingHighCalculator;
+    [SerializeField] AudioClip[] clipsCheep;
     
 
     string state;
@@ -23,6 +25,7 @@ public class ChickenController : MonoBehaviour
         originalPosition = transform.position;
 
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -155,6 +158,7 @@ public class ChickenController : MonoBehaviour
     {
         SetState("cheeping");
         animator.SetTrigger("cheep");
+        PlayCheep();
     }
 
     void Bite()
@@ -210,5 +214,11 @@ public class ChickenController : MonoBehaviour
     {
         print("SetState: " + newState);
         state = newState;
+    }
+
+    void PlayCheep()
+    {
+        var clip = clipsCheep[Random.Range(0, clipsCheep.Length)];
+        audioSource.PlayOneShot(clip);
     }
 }

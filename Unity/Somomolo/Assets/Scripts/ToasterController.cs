@@ -4,29 +4,35 @@ using UnityEngine;
 
 public class ToasterController : MonoBehaviour
 {
-    [SerializeField] public GameObject slot;
+    [SerializeField] public GameObject slot;    
+    [SerializeField] AudioClip[] clipsPopIn;
+    [SerializeField] AudioClip[] clipsPopOut;
     public ToastController toast;
+
 
     string state;
 
     Animator animator;
-
+    AudioSource audioSource;
     void Awake()
     {
         state = "idle";
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void PopOut()
     {
         animator.SetTrigger("popOut");
         state = "popingOut";
+        PlayPopOut();
     }
 
     public void PopIn()
     {
         animator.SetTrigger("popIn");
         state = "popingIn";
+        PlayPopIn();
     }
 
     void ToastClicked()
@@ -60,4 +66,18 @@ public class ToasterController : MonoBehaviour
     {
         return state == "idle";
     }
+
+    void PlayPopIn()
+    {
+        var clip = clipsPopIn[Random.Range(0, clipsPopIn.Length)];
+        audioSource.PlayOneShot(clip);
+    }
+
+    void PlayPopOut()
+    {
+        var clip = clipsPopOut[Random.Range(0, clipsPopOut.Length)];
+        audioSource.PlayOneShot(clip);
+    }
+
+
 }

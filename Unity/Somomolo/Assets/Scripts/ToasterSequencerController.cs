@@ -9,14 +9,22 @@ public class ToasterSequencerController : MonoBehaviour
     public static ToasterSequencerController instance;
     [SerializeField] ToastController[] toasts;
     [SerializeField] ToasterController[] toasters;
+
+    [SerializeField] AudioClip clipCorrect;
+    [SerializeField] AudioClip clipNoCorrect;
+    [SerializeField] AudioClip clipWin;
+
     List<ToastController[]> sequences;
 
     string state = "starting";
 
+    AudioSource audioSource;
+
     void Awake()
     {
         instance = this;
-        sequences = new List<ToastController[]>();    
+        sequences = new List<ToastController[]>();
+        audioSource = GetComponent<AudioSource>();    
     }
 
     void Start()
@@ -36,6 +44,7 @@ public class ToasterSequencerController : MonoBehaviour
         // CanvasGameController.instance.ShowWrong();
         StartFromScratch();
         ChickensController.instance.SendChickensOutOfScene();
+        audioSource.PlayOneShot(clipNoCorrect);
     }
 
     void CorrectClick()
@@ -44,6 +53,7 @@ public class ToasterSequencerController : MonoBehaviour
         // CanvasGameController.instance.ShowCorrect();
         NextWave();
         ChickensController.instance.SendChickenToScene();
+        audioSource.PlayOneShot(clipCorrect);
     }
 
     void StartFromScratch()
@@ -68,6 +78,7 @@ public class ToasterSequencerController : MonoBehaviour
     {
         state = "finished";
         CanvasGameController.instance.ShowYouWin();
+        audioSource.PlayOneShot(clipWin);
     }
 
     void RemoveOldToasts()
