@@ -47,3 +47,12 @@ TagManager:
   - name: Chickens
     uniqueID: 1249180513
     locked: 0
+  - name: Ferris Wheel
+    uniqueID: 2173070481
+    locked: 0
+  - name: Carousel
+    uniqueID: 26114223
+    locked: 0
+  - name: Face
+    uniqueID: 1284701087
+    locked: 0

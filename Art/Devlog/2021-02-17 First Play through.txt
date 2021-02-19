@@ -1,0 +1,9 @@
+ Hello people, welcome to another micro-devlog video for the micro game Somomolo.
+
+I am feeling very content because finally I have a playable version for the first level of this game, the Toasters.
+
+I have added some nice sound effects from the beautiful people of Kenney.nl and others from the indefatigable people from freesound.org. This is always a very intense phase because I am listening to hundreds of microsounds and at the end I don't know if I have lost my judgement. And right now I am not sure if I am totally satisfied with the results but in any case I can feel the sound is already giving another dimension to the game experience.
+
+I have also increased the velocity of the toasters popping out and I have added a small jump to the toast when it is ejected.
+
+Without farther due please enjoy, hope you like it :)
