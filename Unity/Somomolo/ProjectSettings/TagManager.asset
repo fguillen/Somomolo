@@ -56,3 +56,6 @@ TagManager:
   - name: Face
     uniqueID: 1284701087
     locked: 0
+  - name: Confetti
+    uniqueID: 3899316103
+    locked: 0
