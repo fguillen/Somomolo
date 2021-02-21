@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class ConfettiController : MonoBehaviour
 {
+    public static ConfettiController instance;
     [SerializeField] ParticleSystem confettiParticleSystem;
     ParticleSystem.Particle[] confettiParticles;
     [SerializeField] float sweepForce;
 
     void Awake()
     {
+        instance = this;
+        
         if(confettiParticles == null || confettiParticles.Length < confettiParticleSystem.main.maxParticles)
         {
             confettiParticles = new ParticleSystem.Particle[confettiParticleSystem.main.maxParticles];
@@ -17,7 +20,7 @@ public class ConfettiController : MonoBehaviour
     }
 
     [ContextMenu("SweepConfetti")]
-    void SweepConfetti()
+    public void SweepConfetti()
     {
         print("SweepConfetti");
 
