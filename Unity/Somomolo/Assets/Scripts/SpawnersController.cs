@@ -92,7 +92,7 @@ public class SpawnersController : MonoBehaviour
 
     PickController[] CreateNewSequence()
     {
-        PickController[] sequence = new ArraySegment<PickController>(picks, sequences.Count, 3).ToArray();
+        PickController[] sequence = new ArraySegment<PickController>(picks, sequences.Count, spawners.Length).ToArray();
         sequences.Add(sequence);
 
         return sequence;
@@ -161,6 +161,8 @@ public class SpawnersController : MonoBehaviour
 
     bool IsTheCorrectPick(PickController pick)
     {
+        print("IsTheCorrentPick");
+
         var lastSequence = sequences.Last();
         var previousSequence = Array.Empty<PickController>();
 
@@ -170,8 +172,9 @@ public class SpawnersController : MonoBehaviour
         }
 
         var newPicks = lastSequence.Except(previousSequence).ToArray();
+        var result = Array.Exists(newPicks, e => e.pickName == pick.pickName);
 
-        return Array.Exists(newPicks, e => e.pickName == pick.pickName);
+        return result;
     }
 
     public bool AreAllSpawnersIdle()

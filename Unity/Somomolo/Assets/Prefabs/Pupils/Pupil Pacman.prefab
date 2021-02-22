@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 2035320854819351538, guid: fe33bf3702d1f4bc29d132ae2fcb226b,
         type: 3}
       propertyPath: m_Name
-      value: Pupil Normal
+      value: Pupil Pacman
       objectReference: {fileID: 0}
     - target: {fileID: 4729902805030928101, guid: fe33bf3702d1f4bc29d132ae2fcb226b,
         type: 3}
@@ -67,10 +67,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5351211688521693851, guid: fe33bf3702d1f4bc29d132ae2fcb226b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5451630691444724398, guid: 96bd83990f30f476b99bbf1152f13668,
+        type: 3}
     - target: {fileID: 7467276103223258807, guid: fe33bf3702d1f4bc29d132ae2fcb226b,
         type: 3}
       propertyPath: pickName
-      value: Normal
+      value: Pacman
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe33bf3702d1f4bc29d132ae2fcb226b, type: 3}
