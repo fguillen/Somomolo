@@ -94,8 +94,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1561
-      y: 3991
+      x: 2312
+      y: 3090
       width: 32
       height: 21
     spriteID: 3cc98ea7eb79648a0831f742333173f2
@@ -108,7 +108,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1149, y: 1842}
+    uvTransform: {x: 1900, y: 941}
   - name: Shaft
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -116,8 +116,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1407
-      y: 3961
+      x: 2314
+      y: 2926
       width: 79
       height: 72
     spriteID: 865a2e6c5542e4cd69e80338542a6218
@@ -130,7 +130,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 431, y: 2157}
+    uvTransform: {x: 1338, y: 1122}
   - name: Structure
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -138,8 +138,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1458
-      y: 1626
+      x: 2428
+      y: 2997
       width: 447
       height: 714
     spriteID: e8e102083ae2d4ef3a1228b6f9aadc88
@@ -152,7 +152,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 668, y: 448}
+    uvTransform: {x: 1638, y: 1819}
   - name: Star
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -160,8 +160,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1453
+      x: 1612
+      y: 953
       width: 514
       height: 559
     spriteID: a93e98319f0bd49fba8ddfa6f082e57b
@@ -174,7 +174,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -759, y: -123}
+    uvTransform: {x: 849, y: -623}
   - name: Wheel exterior
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -182,7 +182,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 820
+      x: 2428
       y: 809
       width: 809
       height: 809
@@ -196,7 +196,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 207, y: -627}
+    uvTransform: {x: 1815, y: -627}
   - name: Wheel 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -204,8 +204,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1617
-      y: 3603
+      x: 1612
+      y: 2926
       width: 401
       height: 397
     spriteID: dbaf8bf21cb514fd0bd6ede63fcf74ec
@@ -218,7 +218,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 801, y: 1962}
+    uvTransform: {x: 796, y: 1285}
   - name: Ferry
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -226,8 +226,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1407
-      y: 3685
+      x: 1393
+      y: 3820
       width: 169
       height: 167
     spriteID: 1e9d4c3373151423288b57067189a6c5
@@ -240,7 +240,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 104, y: 1855}
+    uvTransform: {x: 90, y: 1990}
   - name: Carousel Horse
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -248,8 +248,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1407
-      y: 3860
+      x: 1393
+      y: 3995
       width: 145
       height: 93
     spriteID: 096d578000ee141b98549f2dc0ea0368
@@ -262,7 +262,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 882, y: 2272}
+    uvTransform: {x: 868, y: 2407}
   - name: Carousel Bar
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -270,8 +270,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 746
-      y: 1736
+      x: 2358
+      y: 3331
       width: 20
       height: 227
     spriteID: 022e2c2dc5757464fba79d230a0452f3
@@ -284,7 +284,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 167, y: 169}
+    uvTransform: {x: 1779, y: 1764}
   - name: Confetti 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -292,8 +292,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 746
-      y: 1971
+      x: 2358
+      y: 3566
       width: 20
       height: 20
     spriteID: bd877d93a9eb141be9447b406627e342
@@ -306,7 +306,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 595, y: -315}
+    uvTransform: {x: 2207, y: 1280}
   - name: Confetti 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -314,8 +314,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1494
-      y: 3961
+      x: 2314
+      y: 3006
       width: 34
       height: 23
     spriteID: 2f7e4cc898e4240bd905dbdd2800aac6
@@ -328,7 +328,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1204, y: 1633}
+    uvTransform: {x: 2024, y: 678}
   - name: Confetti 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -336,8 +336,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1560
-      y: 3899
+      x: 1546
+      y: 4034
       width: 21
       height: 41
     spriteID: a6fe579aaf0304932b3faf292174bf2e
@@ -350,7 +350,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 984, y: 1567}
+    uvTransform: {x: 970, y: 1702}
   - name: Confetti 4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -358,8 +358,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1527
-      y: 3992
+      x: 2314
+      y: 3066
       width: 28
       height: 17
     spriteID: e67e6dcf61e2540a2b2d7eb7691477aa
@@ -372,7 +372,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1199, y: 1729}
+    uvTransform: {x: 1986, y: 803}
   - name: Confetti 5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -380,8 +380,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1494
-      y: 3992
+      x: 1575
+      y: 4034
       width: 25
       height: 26
     spriteID: 3b2d061aa6d3f4886aea50c71bf93f63
@@ -394,7 +394,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1008, y: 1725}
+    uvTransform: {x: 1089, y: 1767}
   - name: Confetti 6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -402,8 +402,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1560
-      y: 3860
+      x: 1546
+      y: 3995
       width: 30
       height: 31
     spriteID: dc4e4b8cf47f74dfbacf82bbbaf58b3b
@@ -416,7 +416,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1376, y: 1682}
+    uvTransform: {x: 1362, y: 1817}
   - name: Confetti 7
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -424,8 +424,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1589
-      y: 3899
+      x: 1584
+      y: 3995
       width: 16
       height: 21
     spriteID: 12d3612ea9d6e452eb18559ca944f04f
@@ -438,7 +438,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1262, y: 1709}
+    uvTransform: {x: 1257, y: 1805}
   - name: Confetti 8
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -446,8 +446,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1574
-      y: 3961
+      x: 1575
+      y: 4068
       width: 29
       height: 19
     spriteID: d21819a00a8424bb58e0dc9073686460
@@ -460,7 +460,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 994, y: 1729}
+    uvTransform: {x: 995, y: 1836}
   - name: Confetti 9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -468,8 +468,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1536
-      y: 3961
+      x: 2314
+      y: 3037
       width: 30
       height: 21
     spriteID: a718a341f97324c068111241a27fc8c4
@@ -482,7 +482,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1273, y: 1849}
+    uvTransform: {x: 2051, y: 925}
   - name: Carousel Top
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -490,8 +490,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 820
-      y: 3685
+      x: 806
+      y: 3820
       width: 579
       height: 239
     spriteID: ed53b0747fac24a029f547b567a99e01
@@ -504,7 +504,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 680, y: 1911}
+    uvTransform: {x: 666, y: 2046}
   - name: Carousel Bottom
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -512,8 +512,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1458
-      y: 2348
+      x: 4
+      y: 3964
       width: 575
       height: 79
     spriteID: 90ddaa7e7d25c47e3bbbd8c220bedec9
@@ -526,7 +526,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1322, y: 845}
+    uvTransform: {x: -132, y: 2461}
   - name: Carousel Center
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -534,8 +534,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 526
-      y: 1736
+      x: 2138
+      y: 3331
       width: 212
       height: 235
     spriteID: ec7477b313ccb4563b660bdee98b3734
@@ -548,7 +548,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 204, y: 172}
+    uvTransform: {x: 1816, y: 1767}
   - name: Eye 2 Left
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -556,8 +556,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1622
-      y: 2497
+      x: 1612
+      y: 1520
       width: 404
       height: 482
     spriteID: 1b23f1f79aa004bc19247222ebec033f
@@ -570,7 +570,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 744, y: 2117}
+    uvTransform: {x: 734, y: 1140}
   - name: Eye 2 Left Pupil
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -578,8 +578,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1637
-      y: 1285
+      x: 2021
+      y: 2926
       width: 285
       height: 205
     spriteID: 53ed856f4f40c490d94dce2c3b970677
@@ -592,7 +592,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 690, y: 786}
+    uvTransform: {x: 1074, y: 2427}
   - name: Eye 2 Left Touched
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -600,8 +600,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1617
-      y: 3163
+      x: 1612
+      y: 2486
       width: 404
       height: 432
     spriteID: c985ffa02ec02468facdf05faa7dc267
@@ -614,7 +614,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 739, y: 2756}
+    uvTransform: {x: 734, y: 2079}
   - name: Eye 2 Left Closed
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -622,8 +622,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1637
-      y: 809
+      x: 1612
+      y: 2010
       width: 404
       height: 468
     spriteID: f15c654c4aa21456ead5b5f29a47d309
@@ -636,7 +636,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 759, y: 428}
+    uvTransform: {x: 734, y: 1629}
   - name: Hair 7
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -644,7 +644,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 1612
       y: 4
       width: 808
       height: 941
@@ -658,7 +658,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -85, y: -345}
+    uvTransform: {x: 1523, y: -345}
   - name: Hair 6
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -666,7 +666,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 820
+      x: 2428
       y: 4
       width: 826
       height: 797
@@ -680,7 +680,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 756, y: -779}
+    uvTransform: {x: 2364, y: -779}
   - name: Hair 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -688,8 +688,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 820
-      y: 3163
+      x: 806
+      y: 3298
       width: 789
       height: 514
     spriteID: fafb7364a3544450f9d79e24ed36e460
@@ -702,7 +702,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 232, y: 2537}
+    uvTransform: {x: 218, y: 2672}
   - name: Hair 2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -710,8 +710,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 953
+      x: 2428
+      y: 2497
       width: 784
       height: 492
     spriteID: 60e478fefc8bd4cba93120edbbaba4e7
@@ -724,7 +724,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -560, y: 247}
+    uvTransform: {x: 1864, y: 1791}
   - name: Hair 4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -732,8 +732,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 2020
+      x: 1612
+      y: 3331
       width: 518
       height: 258
     spriteID: 248b7e9063d2c4e17ae6aa1c43a25bd2
@@ -746,7 +746,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -657, y: 904}
+    uvTransform: {x: 951, y: 2215}
   - name: Hair 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -754,7 +754,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 820
+      x: 2428
       y: 1626
       width: 630
       height: 863
@@ -768,7 +768,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -71, y: 1119}
+    uvTransform: {x: 1537, y: 1119}
   - name: Hair 5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -776,8 +776,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 820
-      y: 2497
+      x: 4
+      y: 3298
       width: 794
       height: 658
     spriteID: c9b6bba3a8bcf4857942481593c40e21
@@ -790,7 +790,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 105, y: 1549}
+    uvTransform: {x: -711, y: 2350}
   - name: Noise
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -798,8 +798,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 526
-      y: 1453
+      x: 2981
+      y: 3719
       width: 208
       height: 275
     spriteID: e1e9e3af44a534a89b858f9510944001
@@ -812,7 +812,73 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -136, y: 1102}
+    uvTransform: {x: 2319, y: 3368}
+  - name: Lights
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2428
+      y: 3719
+      width: 545
+      height: 300
+    spriteID: fdab33fcd4da84084b123b459e4880d5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2298, y: 1744}
+  - name: Lines
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1600
+      height: 2042
+    spriteID: 0fab4239a8faf4e01941e1edb771517b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: -219}
+  - name: Face White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2055
+      width: 1228
+      height: 1235
+    spriteID: ea1114ecbf5c84173915431923ecff7d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -211, y: 2009}
   platformSettings:
   - name: Default
     overridden: 1
@@ -829,14 +895,14 @@ ScriptedImporter:
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 1024
+  importedTextureWidth: 2048
   importedTextureHeight: 2048
   documentSize: {x: 1600, y: 2500}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 2048
+  textureActualWidth: 4096
   textureActualHeight: 4096
   spritePackingTag: 
   resliceFromLayer: 0
@@ -856,70 +922,70 @@ ScriptedImporter:
     parentIndex: 0
     spriteID: bd877d93a9eb141be9447b406627e342
     layerID: 129
-    mosaicPosition: {x: 746, y: 1971}
+    mosaicPosition: {x: 2358, y: 3566}
   - name: Confetti 2
     spriteName: Confetti 2
     isGroup: 0
     parentIndex: 0
     spriteID: 2f7e4cc898e4240bd905dbdd2800aac6
     layerID: 130
-    mosaicPosition: {x: 1494, y: 3961}
+    mosaicPosition: {x: 2314, y: 3006}
   - name: Confetti 3
     spriteName: Confetti 3
     isGroup: 0
     parentIndex: 0
     spriteID: a6fe579aaf0304932b3faf292174bf2e
     layerID: 131
-    mosaicPosition: {x: 1560, y: 3899}
+    mosaicPosition: {x: 1546, y: 4034}
   - name: Confetti 4
     spriteName: Confetti 4
     isGroup: 0
     parentIndex: 0
     spriteID: e67e6dcf61e2540a2b2d7eb7691477aa
     layerID: 132
-    mosaicPosition: {x: 1527, y: 3992}
+    mosaicPosition: {x: 2314, y: 3066}
   - name: Confetti 5
     spriteName: Confetti 5
     isGroup: 0
     parentIndex: 0
     spriteID: 3b2d061aa6d3f4886aea50c71bf93f63
     layerID: 133
-    mosaicPosition: {x: 1494, y: 3992}
+    mosaicPosition: {x: 1575, y: 4034}
   - name: Confetti 6
     spriteName: Confetti 6
     isGroup: 0
     parentIndex: 0
     spriteID: dc4e4b8cf47f74dfbacf82bbbaf58b3b
     layerID: 134
-    mosaicPosition: {x: 1560, y: 3860}
+    mosaicPosition: {x: 1546, y: 3995}
   - name: Confetti 7
     spriteName: Confetti 7
     isGroup: 0
     parentIndex: 0
     spriteID: 12d3612ea9d6e452eb18559ca944f04f
     layerID: 135
-    mosaicPosition: {x: 1589, y: 3899}
+    mosaicPosition: {x: 1584, y: 3995}
   - name: Confetti 8
     spriteName: Confetti 8
     isGroup: 0
     parentIndex: 0
     spriteID: d21819a00a8424bb58e0dc9073686460
     layerID: 136
-    mosaicPosition: {x: 1574, y: 3961}
+    mosaicPosition: {x: 1575, y: 4068}
   - name: Confetti 9
     spriteName: Confetti 9
     isGroup: 0
     parentIndex: 0
     spriteID: a718a341f97324c068111241a27fc8c4
     layerID: 137
-    mosaicPosition: {x: 1536, y: 3961}
+    mosaicPosition: {x: 2314, y: 3037}
   - name: Confetti 10
     spriteName: Confetti 10
     isGroup: 0
     parentIndex: 0
     spriteID: 3cc98ea7eb79648a0831f742333173f2
     layerID: 124
-    mosaicPosition: {x: 1563, y: 3992}
+    mosaicPosition: {x: 2314, y: 3091}
   - name: Face
     spriteName: 
     isGroup: 1
@@ -940,49 +1006,49 @@ ScriptedImporter:
     parentIndex: 12
     spriteID: 9edcec8f17b364027997d8955aec2369
     layerID: 166
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 1612, y: 4}
   - name: Hair 6
     spriteName: Hair 6
     isGroup: 0
     parentIndex: 12
     spriteID: 533fc674bd9894e8090abe4ddf1740d1
     layerID: 165
-    mosaicPosition: {x: 820, y: 4}
+    mosaicPosition: {x: 2428, y: 4}
   - name: Hair 1
     spriteName: Hair 1
     isGroup: 0
     parentIndex: 12
     spriteID: fafb7364a3544450f9d79e24ed36e460
     layerID: 160
-    mosaicPosition: {x: 820, y: 3163}
+    mosaicPosition: {x: 806, y: 3298}
   - name: Hair 2
     spriteName: Hair 2
     isGroup: 0
     parentIndex: 12
     spriteID: 60e478fefc8bd4cba93120edbbaba4e7
     layerID: 161
-    mosaicPosition: {x: 4, y: 953}
+    mosaicPosition: {x: 2428, y: 2497}
   - name: Hair 4
     spriteName: Hair 4
     isGroup: 0
     parentIndex: 12
     spriteID: 248b7e9063d2c4e17ae6aa1c43a25bd2
     layerID: 163
-    mosaicPosition: {x: 4, y: 2020}
+    mosaicPosition: {x: 1612, y: 3331}
   - name: Hair 3
     spriteName: Hair 3
     isGroup: 0
     parentIndex: 12
     spriteID: 77f9e4a32ea8443398a27a41addaccd5
     layerID: 162
-    mosaicPosition: {x: 820, y: 1626}
+    mosaicPosition: {x: 2428, y: 1626}
   - name: Hair 5
     spriteName: Hair 5
     isGroup: 0
     parentIndex: 12
     spriteID: c9b6bba3a8bcf4857942481593c40e21
     layerID: 164
-    mosaicPosition: {x: 820, y: 2497}
+    mosaicPosition: {x: 4, y: 3298}
   - name: Eyes 2
     spriteName: 
     isGroup: 1
@@ -996,33 +1062,33 @@ ScriptedImporter:
     parentIndex: 20
     spriteID: c985ffa02ec02468facdf05faa7dc267
     layerID: 191
-    mosaicPosition: {x: 1617, y: 3163}
+    mosaicPosition: {x: 1612, y: 2486}
   - name: Eye 2 Left Closed
     spriteName: Eye 2 Left Closed
     isGroup: 0
     parentIndex: 20
     spriteID: f15c654c4aa21456ead5b5f29a47d309
     layerID: 190
-    mosaicPosition: {x: 1637, y: 809}
+    mosaicPosition: {x: 1612, y: 2010}
   - name: Eye 2 Left
     spriteName: Eye 2 Left
     isGroup: 0
     parentIndex: 20
     spriteID: 1b23f1f79aa004bc19247222ebec033f
     layerID: 144
-    mosaicPosition: {x: 1622, y: 2497}
+    mosaicPosition: {x: 1612, y: 1520}
   - name: Eye 2 Left Pupil
     spriteName: Eye 2 Left Pupil
     isGroup: 0
     parentIndex: 20
     spriteID: 53ed856f4f40c490d94dce2c3b970677
     layerID: 150
-    mosaicPosition: {x: 1637, y: 1285}
+    mosaicPosition: {x: 2021, y: 2926}
   - name: Eyes
     spriteName: 
     isGroup: 1
     parentIndex: 11
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 53
     mosaicPosition: {x: 0, y: 0}
   - name: Noise
@@ -1031,7 +1097,14 @@ ScriptedImporter:
     parentIndex: 25
     spriteID: e1e9e3af44a534a89b858f9510944001
     layerID: 19
-    mosaicPosition: {x: 526, y: 1453}
+    mosaicPosition: {x: 2981, y: 3719}
+  - name: Face White
+    spriteName: Face White
+    isGroup: 0
+    parentIndex: 11
+    spriteID: ea1114ecbf5c84173915431923ecff7d
+    layerID: 203
+    mosaicPosition: {x: 4, y: 2055}
   - name: Ferries wheel
     spriteName: 
     isGroup: 1
@@ -1042,59 +1115,59 @@ ScriptedImporter:
   - name: Wheel
     spriteName: 
     isGroup: 1
-    parentIndex: 27
+    parentIndex: 28
     spriteID: 00000000000000000000000000000000
     layerID: 82
     mosaicPosition: {x: 0, y: 0}
   - name: Shaft
     spriteName: Shaft
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 29
     spriteID: 865a2e6c5542e4cd69e80338542a6218
     layerID: 75
-    mosaicPosition: {x: 1407, y: 3961}
+    mosaicPosition: {x: 2314, y: 2926}
   - name: Structure
     spriteName: Structure
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 29
     spriteID: e8e102083ae2d4ef3a1228b6f9aadc88
     layerID: 71
-    mosaicPosition: {x: 1458, y: 1626}
+    mosaicPosition: {x: 2428, y: 2997}
   - name: Star
     spriteName: Star
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 29
     spriteID: a93e98319f0bd49fba8ddfa6f082e57b
     layerID: 86
-    mosaicPosition: {x: 4, y: 1453}
+    mosaicPosition: {x: 1612, y: 953}
   - name: Wheel exterior
     spriteName: Wheel exterior
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 29
     spriteID: dd4c58c1d0ec742249f37996a67142d8
     layerID: 85
-    mosaicPosition: {x: 820, y: 809}
+    mosaicPosition: {x: 2428, y: 809}
   - name: Wheel 1
     spriteName: Wheel 1
     isGroup: 0
-    parentIndex: 28
+    parentIndex: 29
     spriteID: dbaf8bf21cb514fd0bd6ede63fcf74ec
     layerID: 59
-    mosaicPosition: {x: 1617, y: 3603}
+    mosaicPosition: {x: 1612, y: 2926}
   - name: Ferry
     spriteName: 
     isGroup: 1
-    parentIndex: 27
+    parentIndex: 28
     spriteID: 00000000000000000000000000000000
     layerID: 78
     mosaicPosition: {x: 0, y: 0}
   - name: Ferry
     spriteName: Ferry
     isGroup: 0
-    parentIndex: 34
+    parentIndex: 35
     spriteID: 1e9d4c3373151423288b57067189a6c5
     layerID: 80
-    mosaicPosition: {x: 1407, y: 3685}
+    mosaicPosition: {x: 1393, y: 3820}
   - name: Carousel
     spriteName: 
     isGroup: 1
@@ -1105,38 +1178,59 @@ ScriptedImporter:
   - name: Carousel Horse
     spriteName: Carousel Horse
     isGroup: 0
-    parentIndex: 36
+    parentIndex: 37
     spriteID: 096d578000ee141b98549f2dc0ea0368
     layerID: 103
-    mosaicPosition: {x: 1407, y: 3860}
+    mosaicPosition: {x: 1393, y: 3995}
   - name: Carousel Bar
     spriteName: Carousel Bar
     isGroup: 0
-    parentIndex: 36
+    parentIndex: 37
     spriteID: 022e2c2dc5757464fba79d230a0452f3
     layerID: 100
-    mosaicPosition: {x: 746, y: 1736}
+    mosaicPosition: {x: 2358, y: 3331}
   - name: Carousel Top
     spriteName: Carousel Top
     isGroup: 0
-    parentIndex: 36
+    parentIndex: 37
     spriteID: ed53b0747fac24a029f547b567a99e01
     layerID: 126
-    mosaicPosition: {x: 820, y: 3685}
+    mosaicPosition: {x: 806, y: 3820}
   - name: Carousel Bottom
     spriteName: Carousel Bottom
     isGroup: 0
-    parentIndex: 36
+    parentIndex: 37
     spriteID: 90ddaa7e7d25c47e3bbbd8c220bedec9
     layerID: 127
-    mosaicPosition: {x: 1458, y: 2348}
+    mosaicPosition: {x: 4, y: 3964}
   - name: Carousel Center
     spriteName: Carousel Center
     isGroup: 0
-    parentIndex: 36
+    parentIndex: 37
     spriteID: ec7477b313ccb4563b660bdee98b3734
     layerID: 99
-    mosaicPosition: {x: 526, y: 1736}
+    mosaicPosition: {x: 2138, y: 3331}
+  - name: Background
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 197
+    mosaicPosition: {x: 0, y: 0}
+  - name: Lights
+    spriteName: Lights
+    isGroup: 0
+    parentIndex: 43
+    spriteID: fdab33fcd4da84084b123b459e4880d5
+    layerID: 201
+    mosaicPosition: {x: 2428, y: 3719}
+  - name: Lines
+    spriteName: Lines
+    isGroup: 0
+    parentIndex: 43
+    spriteID: 0fab4239a8faf4e01941e1edb771517b
+    layerID: 199
+    mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
     parts: []
